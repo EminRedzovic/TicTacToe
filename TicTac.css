@@ -124,3 +124,10 @@ body{
     border: 1px solid black;
     text-align: center;
 }
+#Winner{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+}

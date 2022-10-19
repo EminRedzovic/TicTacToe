@@ -3,6 +3,7 @@ var T,B,C;
 var D,E,F;
 var G,H,J;
 document.getElementById('A').addEventListener('click',function(){
+    if(!T==1 || !T==2){
     if(a===0){
         document.getElementById('A').textContent = "X";
         a=1;
@@ -13,8 +14,11 @@ document.getElementById('A').addEventListener('click',function(){
         a=0;
         T=2;
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -24,6 +28,8 @@ document.getElementById('A').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -36,7 +42,9 @@ document.getElementById('A').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -46,6 +54,8 @@ document.getElementById('A').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -59,6 +69,7 @@ document.getElementById('A').addEventListener('click',function(){
     }
 })
 document.getElementById('B').addEventListener('click',function(){
+    if(!B==1 || !B==2){
     if(a===0){
         document.getElementById('B').textContent = "X";
         a=1;
@@ -69,8 +80,11 @@ document.getElementById('B').addEventListener('click',function(){
         a=0;
         B=2;
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -80,6 +94,8 @@ document.getElementById('B').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -92,7 +108,9 @@ document.getElementById('B').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -102,6 +120,8 @@ document.getElementById('B').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -115,6 +135,7 @@ document.getElementById('B').addEventListener('click',function(){
     }
 })
 document.getElementById('C').addEventListener('click',function(){
+    if (!C==1 || !C==2){
     if(a===0){
         document.getElementById('C').textContent = "X";
         a=1;
@@ -125,8 +146,11 @@ document.getElementById('C').addEventListener('click',function(){
         a=0;
         C=2;
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -136,6 +160,8 @@ document.getElementById('C').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -148,7 +174,9 @@ document.getElementById('C').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -158,6 +186,8 @@ document.getElementById('C').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -171,6 +201,7 @@ document.getElementById('C').addEventListener('click',function(){
     }
 })
 document.getElementById('D').addEventListener('click',function(){
+    if (!D==1 || !D==2){
     if(a===0){
         document.getElementById('D').textContent = "X";
         a=1;
@@ -181,8 +212,11 @@ document.getElementById('D').addEventListener('click',function(){
         a=0;
         D=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -192,6 +226,8 @@ document.getElementById('D').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -204,7 +240,9 @@ document.getElementById('D').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -214,6 +252,8 @@ document.getElementById('D').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -227,6 +267,7 @@ document.getElementById('D').addEventListener('click',function(){
     }
 })
 document.getElementById('E').addEventListener('click',function(){
+    if (!E==1 || !E==2){
     if(a===0){
         document.getElementById('E').textContent = "X";
         a=1;
@@ -237,8 +278,11 @@ document.getElementById('E').addEventListener('click',function(){
         a=0;
         E=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -248,6 +292,8 @@ document.getElementById('E').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -260,7 +306,9 @@ document.getElementById('E').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -270,6 +318,8 @@ document.getElementById('E').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -283,6 +333,7 @@ document.getElementById('E').addEventListener('click',function(){
     }
 })
 document.getElementById('F').addEventListener('click',function(){
+    if (!F==1 || !F==2){
     if(a===0){
         document.getElementById('F').textContent = "X";
         a=1;
@@ -293,8 +344,11 @@ document.getElementById('F').addEventListener('click',function(){
         a=0;
         F=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -304,6 +358,8 @@ document.getElementById('F').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -316,7 +372,9 @@ document.getElementById('F').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -326,6 +384,8 @@ document.getElementById('F').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -339,6 +399,7 @@ document.getElementById('F').addEventListener('click',function(){
     }
 })
 document.getElementById('G').addEventListener('click',function(){
+    if (!G==1 || !G==2){
     if(a===0){
         document.getElementById('G').textContent = "X";
         a=1;
@@ -349,8 +410,11 @@ document.getElementById('G').addEventListener('click',function(){
         a=0;
         G=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -360,6 +424,8 @@ document.getElementById('G').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -372,7 +438,9 @@ document.getElementById('G').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -382,6 +450,8 @@ document.getElementById('G').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -395,6 +465,7 @@ document.getElementById('G').addEventListener('click',function(){
     }
 })
 document.getElementById('H').addEventListener('click',function(){
+    if(!H==1 || !H==2){
     if(a===0){
         document.getElementById('H').textContent = "X";
         a=1;
@@ -405,8 +476,11 @@ document.getElementById('H').addEventListener('click',function(){
         a=0;
         H=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -416,6 +490,8 @@ document.getElementById('H').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -428,7 +504,9 @@ document.getElementById('H').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -438,6 +516,8 @@ document.getElementById('H').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
@@ -451,6 +531,7 @@ document.getElementById('H').addEventListener('click',function(){
     }
 })
 document.getElementById('J').addEventListener('click',function(){
+    if(!J==1 || !J==2){
     if(a===0){
         document.getElementById('J').textContent = "X";
         a=1;
@@ -461,8 +542,11 @@ document.getElementById('J').addEventListener('click',function(){
         a=0;
         J=2
     }
+}
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
-        alert("X has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 2 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -472,6 +556,8 @@ document.getElementById('J').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=1;
         T=0;
         B=0;
@@ -484,7 +570,9 @@ document.getElementById('J').addEventListener('click',function(){
         J=0;
     }
     else if(T==2 && B==2 && C==2 || D==2 && T==2 && G==2 || C==2 && F==2 && J==2 || J==2 && H==2 && G==2 || C==2 && E==2 && G==2 || D==2 && E==2 && F==2 || T==2 && E==2 && J==2|| B==2 && E==2 && H==2){
-        alert("O has won")
+        document.getElementById('id01').style.display = "block";
+        document.getElementById('Winner').textContent = "Player 1 has won!"
+        document.getElementById('id01').addEventListener('click',function(){
         document.getElementById('A').textContent = "";
         document.getElementById('B').textContent = "";
         document.getElementById('C').textContent = "";
@@ -494,6 +582,8 @@ document.getElementById('J').addEventListener('click',function(){
         document.getElementById('G').textContent = "";
         document.getElementById('H').textContent = "";
         document.getElementById('J').textContent = "";
+        document.getElementById('id01').style.display='none'
+        })
         a=0;
         T=0;
         B=0;
