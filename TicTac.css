@@ -112,7 +112,6 @@
 body{
     display: flex;
     justify-content: center;
-    padding-top: 120px;
 }
 .first,.second,.third{
     display: flex;
@@ -123,6 +122,8 @@ body{
     height: 30px;
     border: 1px solid black;
     text-align: center;
+    display: block;
+    cursor: pointer;
 }
 #Winner{
     font-weight: bold;
@@ -130,4 +131,70 @@ body{
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
+}
+.TicTac{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+.left{
+    display: flex;
+    background-color: wheat;
+    flex: 4;
+    height: 50%;
+    border-bottom-right-radius: 20px;
+}
+.right{
+    background-color: blue;
+    flex: 4;
+    width: 50%;
+}
+.Tikatk{
+    padding-top: 120px;
+}
+.card{
+    width: 100%;
+}
+.card h3{
+    display: inline;
+    width: 60%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card p{
+    display: inline;
+}
+.card img{
+    width: 80px;
+    height: 80px;
+    border: 1px double black;
+}
+.Messs{
+    width: 100%;
+    padding: 90px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    padding-top: 20px;
+}
+.c{
+    border:1px solid black ;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    float: left;
+}
+h2{
+    margin: 0px!important;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
+}
+h5{
+    padding: 0px;
+    margin: 0px!important;
+    display: inline;
+}
+.cigan{
+    margin-left: 110px;
 }
