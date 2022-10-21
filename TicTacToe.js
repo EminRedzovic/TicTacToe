@@ -31,6 +31,9 @@ function player2Win(){
     document.getElementById('Win').textContent = "";
     document.getElementById('id01').addEventListener('click',function(){
     clearAllFields();
+    document.getElementById('right').style.backgroundColor = "white";
+    document.getElementById('left').style.backgroundColor = "white";
+    document.getElementById('Win').textContent = "";
     document.getElementById('id01').style.display='none'
     })
 }
@@ -39,6 +42,9 @@ function player1Win(){
     document.getElementById('Winner').textContent = "Player 1 has won!"
     document.getElementById('Win').textContent = "";
     document.getElementById('id01').addEventListener('click',function(){
+        document.getElementById('right').style.backgroundColor = "white";
+        document.getElementById('left').style.backgroundColor = "white";
+        document.getElementById('Winn').textContent = "";
         clearAllFields();
     document.getElementById('id01').style.display='none'
     })
@@ -50,12 +56,18 @@ document.getElementById('A').addEventListener('click',function(){
         a=1;
         T=1;
         document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('A').textContent = "O";
         a=0;
         T=2;
-        document.getElementById('Win').textContent = "Player 2's turn";
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white";
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -74,12 +86,18 @@ document.getElementById('B').addEventListener('click',function(){
         a=1;
         B=1
         document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('B').textContent = "O";
         a=0;
         B=2;
-        document.getElementById('Win').textContent = "Player 2's turn";
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -97,11 +115,19 @@ document.getElementById('C').addEventListener('click',function(){
         document.getElementById('C').textContent = "X";
         a=1;
         C=1;
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('C').textContent = "O";
         a=0;
         C=2;
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -119,11 +145,19 @@ document.getElementById('D').addEventListener('click',function(){
         document.getElementById('D').textContent = "X";
         a=1;
         D=1
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('D').textContent = "O";
         a=0;
         D=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -141,11 +175,19 @@ document.getElementById('E').addEventListener('click',function(){
         document.getElementById('E').textContent = "X";
         a=1;
         E=1;
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('E').textContent = "O";
         a=0;
         E=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white";
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -163,11 +205,19 @@ document.getElementById('F').addEventListener('click',function(){
         document.getElementById('F').textContent = "X";
         a=1;
         F=1
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('F').textContent = "O";
         a=0;
         F=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -185,11 +235,19 @@ document.getElementById('G').addEventListener('click',function(){
         document.getElementById('G').textContent = "X";
         a=1;
         G=1
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('G').textContent = "O";
         a=0;
         G=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -207,11 +265,19 @@ document.getElementById('H').addEventListener('click',function(){
         document.getElementById('H').textContent = "X";
         a=1;
         H=1
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('H').textContent = "O";
         a=0;
         H=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -229,11 +295,19 @@ document.getElementById('J').addEventListener('click',function(){
         document.getElementById('J').textContent = "X";
         a=1;
         J=1
+        document.getElementById('Win').textContent = "Player 1's turn";
+        document.getElementById('Winn').textContent = "";
+        document.getElementById('left').style.backgroundColor = "wheat";
+        document.getElementById('right').style.backgroundColor = "white"
     }
     else if(a===1){
         document.getElementById('J').textContent = "O";
         a=0;
         J=2
+        document.getElementById('Winn').textContent = "Player 2's turn";
+        document.getElementById('Win').textContent = "";
+        document.getElementById('right').style.backgroundColor = "wheat";
+        document.getElementById('left').style.backgroundColor = "white"
     }
 }
     if(T==1 && B==1 && C==1 || D==1 && T==1 && G==1 || C==1 && F==1 && J==1 || J==1 && H==1 && G==1 || C==1 && E==1 && G==1 || D==1 && E==1 && F==1 || T==1 && E==1 && J==1 || B==1 && E==1 && H==1){
@@ -249,4 +323,8 @@ document.getElementById('J').addEventListener('click',function(){
 document.getElementById('Reset').addEventListener('click',function(){
     clearAllFields();
     emptyAllVars(0);
+    document.getElementById('right').style.backgroundColor = "white";
+    document.getElementById('left').style.backgroundColor = "white";
+    document.getElementById('Win').textContent = "";
+    document.getElementById('Winn').textContent = "";
 })

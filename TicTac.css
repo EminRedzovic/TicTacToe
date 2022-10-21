@@ -120,10 +120,17 @@ body{
 #Reset{
     width: 200px;
     height: 30px;
-    border: 1px solid black;
+    color: darkslategrey;
     text-align: center;
     display: block;
     cursor: pointer;
+    margin-left: 125px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cornflowerblue;
 }
 #Winner{
     font-weight: bold;
@@ -139,15 +146,16 @@ body{
 }
 .left{
     display: flex;
-    background-color: wheat;
+    background-color: white;
     flex: 4;
     height: 50%;
     border-bottom-right-radius: 20px;
 }
 .right{
-    background-color: blue;
     flex: 4;
     width: 50%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
 }
 .Tikatk{
     padding-top: 120px;
@@ -178,6 +186,16 @@ body{
     height: 70px;
     padding-top: 20px;
 }
+.desno{
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.desno img{
+    float: right;
+    margin-right: 20px;
+}
 .c{
     border:1px solid black ;
     width: 100px;
@@ -197,4 +215,7 @@ h5{
 }
 .cigan{
     margin-left: 110px;
+}
+.cigann{
+    margin-left: 230px;
 }
